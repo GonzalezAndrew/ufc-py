@@ -1,6 +1,20 @@
+'''
+# change this to grab the href in the a tag to parse the fighters fight stats
+<td class="b-statistics__table-col">
+    <a href="http://ufcstats.com/fighter-details/c9f6385af6df66d7" class="b-link b-link_style_black">Papy</a>
+</td>
+<td class="b-statistics__table-col">
+    <a href="http://ufcstats.com/fighter-details/c9f6385af6df66d7" class="b-link b-link_style_black">Abedi</a>
+</td>
+<td class="b-statistics__table-col">
+    <a href="http://ufcstats.com/fighter-details/c9f6385af6df66d7" class="b-link b-link_style_black">Makambo</a>
+</td>
+
+'''
 from bs4 import BeautifulSoup
 from constants import fighters_urls
 from utils import get_data
+
 
 for url in fighters_urls:
     data = get_data(url)
